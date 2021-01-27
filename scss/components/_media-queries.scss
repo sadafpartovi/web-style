@@ -1,0 +1,101 @@
+/* ============================================= */
+  /*              Media Queries                    */
+  /* ============================================= */
+  @media (min-width: $breakpoint-md) {
+  
+    .container {
+      max-width: 1400px;
+      @include mq-display;
+    }
+    
+    .centered {
+        @include mq-display;
+    }
+    
+    .row {
+      flex-direction: row;
+    }
+    
+    [class^=col] {
+      display: flex;
+      justify-content: center;
+      margin-top: 0;
+      align-items: center;
+    }
+    
+    [class^=col] + [class^=col] {
+      margin-left: 10px;
+    }
+    
+    .col-1 {
+      flex-basis: map-get($flex-b-col, '1');
+    }
+    
+    .col-2 {
+      flex-basis: map-get($flex-b-col, '2');
+    }
+    
+    .col-3 {
+      flex-basis: map-get($flex-b-col, '3');
+    }
+    
+    .col-4 {
+      flex-basis: map-get($flex-b-col, '4');
+    }
+    
+    .col-5 {
+      flex-basis: map-get($flex-b-col, '5');
+    }
+    
+    .col-6 {
+      flex-basis: map-get($flex-b-col, '6');
+    }
+    
+    .col-7 {
+      flex-basis: map-get($flex-b-col, '7');
+    }
+    
+    .col-8 {
+      flex-basis: map-get($flex-b-col, '8');
+    }
+    
+    .col-9 {
+      flex-basis: map-get($flex-b-col, '9');
+    }
+    
+    .col-10 {
+      flex-basis: map-get($flex-b-col, '10');
+    }
+    
+    .col-11 {
+      flex-basis: map-get($flex-b-col, '11');
+    }
+    
+    .col-12 {
+      flex-basis: map-get($flex-b-col, '12');
+    }
+    
+    .nav {
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    
+    .nav-link {
+      flex-basis: $flex-basis;
+    }
+    
+    .btn {
+      padding: 10px 30px;
+    }
+    
+    .btn + .btn {
+      margin-left: 10px;
+    }
+    
+    .logo {
+      margin-left: initial;
+      margin-right: initial;
+    }
+    
+    }

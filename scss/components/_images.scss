@@ -1,0 +1,19 @@
+/* ============================================= */
+  /*              Images                           */
+  /* ============================================= */
+  
+  .img-avatar {
+    max-height: 100%;
+    @include img-display;
+  }
+  
+  .img-frame {
+    padding: 13px;
+    border: 1px solid #ccc;
+    @include img-display;
+  }
+  
+  .img-logo {
+    @include mq-display;
+  }
+  
